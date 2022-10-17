@@ -6,6 +6,8 @@
 
     /* colors */
     --main-back: #6495ED;
+    --border-cells: #40E0D0;
+    --cell-pass: #9FE2BF;
 }
 
 body {
@@ -45,7 +47,6 @@ h4 {
 
 
 .grid {
-    border: 1px solid black;
     width: 500px;
     height: 500px;
     display: flex;
@@ -56,10 +57,16 @@ h4 {
 }
 
 .cell {
-    border: 1px solid black;
+    border: 1px solid var(--border-cells);
     width: calc(100% / 10);
     height: calc(100% / 10);
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+}
+
+
+.cell-pass {
+    background-color: var(--cell-pass);
 }
