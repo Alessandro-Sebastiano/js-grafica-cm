@@ -41,7 +41,7 @@ function startPlay() {
         grid.appendChild(cell);
         cell.addEventListener('click', () => {
             if (cell.classList.contains('cell-pass')) {
-                console.log('Cella gia selezionata')
+                console.log('Cella numero ' + cellNumber + ' gia selezionata')
             } else {
                 cell.classList.add('cell-pass');
                 console.log('Cell number: ', cellNumber);
