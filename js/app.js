@@ -11,6 +11,7 @@ function startPlay() {
     const select = document.getElementById('select');
     const difficulty = select.value;
     gridBox.innerHTML = ''
+    const resetBtn = document.getElementById('reset-button');
     console.log('Gioco iniziato...')
 
     switch (difficulty) {
@@ -46,6 +47,10 @@ function startPlay() {
                 cell.classList.add('cell-pass');
                 console.log('Cell number: ', cellNumber);
             }
+
+            resetBtn.addEventListener('click', () => {
+                cell.classList.remove('cell-pass');
+            })
         })
 
     }
