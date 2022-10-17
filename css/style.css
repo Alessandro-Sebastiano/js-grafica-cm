@@ -58,8 +58,6 @@ h4 {
 
 .cell {
     border: 1px solid var(--border-cells);
-    width: calc(100% / 10);
-    height: calc(100% / 10);
     display: flex;
     align-items: center;
     justify-content: center;
