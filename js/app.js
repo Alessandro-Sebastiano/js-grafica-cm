@@ -6,6 +6,7 @@ function startPlay() {
 
     const gridBox = document.getElementById('grid-box');
     const grid = document.createElement('div');
+    const BOMB_NUMBER = 16;
 
     gridBox.innerHTML = ''
     console.log('Gioco iniziato...')
@@ -17,6 +18,7 @@ function startPlay() {
         grid.appendChild(cell);
         cell.addEventListener('click', () => {
             cell.classList.add('cell-pass');
+            console.log(cellNumber);
         })
 
     }
@@ -27,6 +29,10 @@ function startPlay() {
         for (let i = 1; i <= 100; i++) {
             mkCell(i);
         }
+    }
+
+    function mkBomb() {
+
     }
 
     mkGrid();
